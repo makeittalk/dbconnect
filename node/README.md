@@ -6,5 +6,8 @@ Given a configuration, it collects the databases available and prints them on th
 Run:
 
 cd node
+
 npm install
+
 node dbconnect.js
+
