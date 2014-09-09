@@ -1,5 +1,25 @@
-Servers = new Meteor.Collection("servers");
-Servers.attachSchema(new SimpleSchema({
+Schema = {};
+
+Schema.Task = new SimpleSchema({
+  name: {
+    type: String,
+    label: "Task Name"
+  },
+  description: {
+    type: String,
+    label: "Description"
+  },
+  type: {
+    type: String,
+    label: "Task Type"
+  },
+  targetObjectId: {
+    type: String,
+    label: "Object Id"
+  }
+});
+
+Schema.Server =new SimpleSchema({
   name: {
     type: String,
     label: "Name"
@@ -28,4 +48,5 @@ Servers.attachSchema(new SimpleSchema({
     type: String,
     label: "Password"
   }
-}));
+});
+
