@@ -1,0 +1,9 @@
+{
+  "name": "dbconnector",
+  "description": "A package for connecting to SQL server",
+  "author": "Make it talk <make.db.talk@gmail.com>",
+  "dependencies": {
+    "tedious": "1.5.1"
+  },
+  "engine": "node >= 0.10.31"
+}
