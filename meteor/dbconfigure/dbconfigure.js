@@ -1,3 +1,7 @@
+Houston.add_collection(Meteor.users);
+Houston.add_collection(Servers);
+Houston.add_collection(Houston._admins);
+
 if (Meteor.isClient) {
   // counter starts at 0
   Session.setDefault("counter", 0);

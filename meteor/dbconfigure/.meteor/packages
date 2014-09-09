@@ -9,4 +9,8 @@ insecure
 accounts-password
 accounts-ui
 accounts-google
+iron:router
+aldeed:autoform
+aldeed:collection2
+houston:admin
 
