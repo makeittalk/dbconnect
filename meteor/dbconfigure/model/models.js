@@ -5,5 +5,7 @@ Tasks = new Meteor.Collection("tasks");
 //Tasks.attachSchema(Schema.Task);
 
 Fields = new Mongo.Collection("fields");
-SchemaDefinitions = new Mongo.Collection("schemas");
+Fields.attachSchema(Schema.Fields);
 
+SchemaDefinition = new Mongo.Collection("schemas");
+SchemaDefinition.attachSchema(Schema.SchemaDefinition);

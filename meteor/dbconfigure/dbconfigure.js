@@ -3,7 +3,7 @@ Houston.add_collection(Tasks);
 Houston.add_collection(Servers);
 Houston.add_collection(Houston._admins);
 Houston.add_collection(Fields);
-Houston.add_collection(SchemaDefinitions);
+Houston.add_collection(SchemaDefinition);
 
 if (Meteor.isClient) {
 }
