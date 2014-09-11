@@ -1,52 +1,31 @@
 Schema = {};
 
-Schema.Task = new SimpleSchema({
-  name: {
-    type: String,
-    label: "Task Name"
-  },
-  description: {
-    type: String,
-    label: "Description"
-  },
-  type: {
-    type: String,
-    label: "Task Type"
-  },
-  targetObjectId: {
-    type: String,
-    label: "Object Id"
-  }
-});
-
-Schema.Server =new SimpleSchema({
+Schema.Fields = new SimpleSchema({
   name: {
     type: String,
     label: "Name"
   },
-  Description: {
+  type: {
     type: String,
-    label: "Description"
+    label: "type"
   },
-  server: {
+  label: {
     type: String,
-    label: "Server URL"
-  },
-  userName: {
-    type: String,
-    label: "Usr name"
-  },
-  port: {
-    type: String,
-    label: "Port"
-  },
-  instanceName: {
-    type: String,
-    label: "Instance name" 
-  },
-  password: {
-    type: String,
-    label: "Password"
+    label: "label"
   }
 });
 
+Schema.SchemaDefinition = new SimpleSchema({
+  name: {
+    type: String,
+    label: "Name"
+  },
+  fields: {
+    type: [String],
+    label: "Fields"
+  },
+  createdAt: {
+    type: Date,
+    label: "Created at"
+  }
+});

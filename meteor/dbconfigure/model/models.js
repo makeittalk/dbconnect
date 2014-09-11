@@ -1,7 +1,9 @@
 Servers = new Meteor.Collection("servers");
-Servers.attachSchema(Schema.Server);
+//Servers.attachSchema(Schema.Server);
 
 Tasks = new Meteor.Collection("tasks");
-Tasks.attachSchema(Schema.Task);
+//Tasks.attachSchema(Schema.Task);
 
+Fields = new Mongo.Collection("fields");
+SchemaDefinitions = new Mongo.Collection("schemas");
 
